@@ -1,0 +1,8 @@
+C:\Users\stack111\Documents\GitHub\DecimalToRoman\DecimalToRoman\bin\Debug\netstandard2.0\DecimalToRoman.deps.json
+C:\Users\stack111\Documents\GitHub\DecimalToRoman\DecimalToRoman\bin\Debug\netstandard2.0\DecimalToRoman.dll
+C:\Users\stack111\Documents\GitHub\DecimalToRoman\DecimalToRoman\bin\Debug\netstandard2.0\DecimalToRoman.pdb
+C:\Users\stack111\Documents\GitHub\DecimalToRoman\DecimalToRoman\obj\Debug\netstandard2.0\DecimalToRoman.csproj.CoreCompileInputs.cache
+C:\Users\stack111\Documents\GitHub\DecimalToRoman\DecimalToRoman\obj\Debug\netstandard2.0\DecimalToRoman.AssemblyInfoInputs.cache
+C:\Users\stack111\Documents\GitHub\DecimalToRoman\DecimalToRoman\obj\Debug\netstandard2.0\DecimalToRoman.AssemblyInfo.cs
+C:\Users\stack111\Documents\GitHub\DecimalToRoman\DecimalToRoman\obj\Debug\netstandard2.0\DecimalToRoman.dll
+C:\Users\stack111\Documents\GitHub\DecimalToRoman\DecimalToRoman\obj\Debug\netstandard2.0\DecimalToRoman.pdb
