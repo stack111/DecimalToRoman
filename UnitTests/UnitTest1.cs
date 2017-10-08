@@ -16,6 +16,11 @@ namespace UnitTests
         [InlineData("C", 100)]
         [InlineData("D", 500)]
         [InlineData("M", 1000)]
+        [InlineData("MI", 1001)]
+        [InlineData("VMM", 1995)]
+        [InlineData("VXMM", 1985)]
+        [InlineData("VXVX", 10)]
+        [InlineData("III", 3)]
         public void DDT(string numeral, int expected)
         {
             RomanNumeral roman = new RomanNumeral(numeral);
