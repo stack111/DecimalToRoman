@@ -2,21 +2,30 @@
 
 namespace DecimalToRoman
 {
+    /// <summary>
+    /// Roman Numeral based class
+    /// </summary>
     public class RomanNumeral
     {
-        string _numeral;
+        public string value { get; private set; }  
         public RomanNumeral(string numeral)
         {
-            _numeral = numeral;
+            if(string.IsNullOrEmpty(numeral))
+            {
+                throw new ArgumentNullException(nameof(numeral));
+            }
+            value = numeral;
         }
+
+        /// <summary> 
+        /// Converts the roman numeral to decimal.
+        /// </summary>
         public int ToDecimal()
         {
-            string temp = _numeral.ToLowerInvariant();
+            string temp = value.ToLowerInvariant();
             char[] ch = temp.ToCharArray();
             
-            int value = Recurse(ch, 0);
-
-            return value;
+            return Recurse(ch, 0);
         }
 
         private int Recurse(char[] chars, int i)
@@ -29,7 +38,8 @@ namespace DecimalToRoman
             // vx
             int next = Recurse(chars, i+1);
             int current = NumeralToDecimal(chars[i]);
-            if(current < next)
+
+            if(current < next && chars[i+1] != chars[i])
             {
                 // subtract
                 return next - current;
@@ -37,6 +47,7 @@ namespace DecimalToRoman
             else
             {
                 // add
+                // todo: how to deal with overflow?
                 return current + next;
             }
         }
